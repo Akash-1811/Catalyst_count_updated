@@ -1,0 +1,70 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>CATALYST | ADMIN</title>
+	<link href="{% static '/images/favicon.ico' %}" rel="icon">
+    <!-- Bootstrap -->
+    <link href="{% static 'assets/bootstrap/dist/css/bootstrap.min.css' %}" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="{% static 'assets/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/font-awesome/custom_css/iconfont.css' %}" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="{% static 'assets/nprogress/nprogress.css' %}" rel="stylesheet">
+    <!-- Green check box  -->
+    <link href="{% static 'assets/iCheck/skins/flat/green.css' %}" rel="stylesheet">
+
+    <!-- Notifications  -->
+    <link href="{% static 'assets/pnotify/dist/pnotify.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/pnotify/dist/pnotify.buttons.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/pnotify/dist/pnotify.nonblock.css' %}" rel="stylesheet">
+
+
+
+	{% block plugin_css %}{% endblock %}
+    <!-- Custom Theme Style -->
+    <link href="{% static 'build/css/custom.css' %}" rel="stylesheet">
+    <link href="{% static 'build/css/owner_app.css' %}" rel="stylesheet">
+    <!-- jQuery -->
+    <script src="{% static 'assets/jquery/dist/jquery.min.js' %}"></script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-52WYSLD2T5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-52WYSLD2T5');
+    </script>
+  </head>
+
+  <body class="nav-sm">
+  {% block owner_site_wrapper %}{% endblock %}
+    <!-- Bootstrap -->
+    <script src="{% static 'assets/bootstrap/dist/js/bootstrap.min.js' %}"></script>
+    <!-- FastClick -->
+    <script src="{% static 'assets/fastclick/lib/fastclick.js' %}"></script>
+    <!-- NProgress -->
+    <script src="{% static 'assets/nprogress/nprogress.js' %}"></script>
+
+    <!-- icheck js  -->
+    <script src="{% static 'assets/iCheck/icheck.min.js' %}"></script>
+
+    <!-- Notification js  -->
+    <script src="{% static 'assets/pnotify/dist/pnotify.js' %}"></script>
+    <script src="{% static 'assets/pnotify/dist/pnotify.buttons.js' %}"></script>
+    <script src="{% static 'assets/pnotify/dist/pnotify.nonblock.js' %}"></script>
+    {% block custom_scripts %}{% endblock %}
+
+     <!-- Custom Theme Scripts -->
+    <script src="{% static  'build/js/custom.js' %}"></script>
+    <script src="{% static  'build/js/notification_ajax.js' %}"></script>
+    <script type="text/javascript" nonce="34344543" src="https://desk.zoho.in/portal/api/web/inapp/65985000000206013?orgId=60013085358" defer></script>
+  </body>
+</html>

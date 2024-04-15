@@ -1,0 +1,15 @@
+{% extends "owner_site_base_main.html" %}
+{% load static %}
+{% block owner_site_wrapper %}
+      <div class="container body">
+      <div class="main_container">
+		<!-- Top Nav -->
+		{% include 'top_nav.html' %}
+
+		{% block owner_site_content %} {% endblock %}
+
+       <!-- Footer -->
+       {% include 'footer.html' %}
+      </div>
+    </div>
+   {% endblock %}
